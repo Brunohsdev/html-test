@@ -1,2 +1,2 @@
 # html-test
-###Meus PEquenos EXperimentos na linguagem html
+###Meus Pequenos Experimentos nas linguagens Html.Css,JavaScript, React e Angular
