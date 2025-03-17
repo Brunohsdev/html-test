@@ -1,0 +1,29 @@
+
+body{
+    background: linear-gradient(rgb(1, 211, 111), rgb(6, 230, 118), rgb(86, 233, 142));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+color: rgb(240, 238, 238);
+}
+form{
+    width: 300px;
+}
+input{
+    border: none;
+}
+
+
+input, button{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+    
+}
+
+button{
+    cursor: pointer;
+}
