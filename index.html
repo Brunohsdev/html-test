@@ -7,39 +7,33 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!--Faz um formulário para a validação de informações-->
     <form action="exemplo.html">
-        <Div class="titulo">
-            <h1>Fides+</h1>  
-        </Div>
-        <div class="email">
-        <label>Email</label>
-        <input type="email" name="Email" placeholder="seu@email.com">
-        </div>
+        <Div class="titulo"><h1>Fides+</h1></Div>
         
-        <div class="senha">
-            <label>Senha</label>
+        <!--Cria os campos input de Email, Senha, Entrar, Registrar, e Recuperar senha-->
+        <div class="email"><label>Email</label>
+        <input type="email" name="Email" placeholder="seu@email.com"    
+        onchange="ValidateFields()" id="Email">
+        <!--O onchange acima serve para confirmar que o email de lá do js é o mesmo que está aqui no html, serve para os demais--></div>
+        
+        <div class="senha"><label>Senha</label>
             <input type="Password" name="Senha"
-            placeholder="Digite sua senha">
-        </div>
+            placeholder="Digite sua senha" id="password" onchange="ValidateFields()"></div>
        
         <div class="Entrar">
-            <button type="submit" onclick="alert('Você fez login no sistema')">Entrar</button>
-        </div>
-        <div class="Registrar">
-            <button type="button" onclick="alert ('VOcê se registrou no sistema')">Registrar</button>
+            <button type="submit" onclick="alert('Você fez login no sistema')" disabled ="True" id="login-button">Entrar</button>
+            <!--Aqui eu desabilito os campos Entar e Recuperar senha como está informado no script.js--></div>
+       
+       
+        <div class="Registrar"><button type="button" onclick="alert ('VOcê se registrou no sistema')">Registrar</button></div>
 
-        </div>
-        <div class="Reiniciar">
-        <button type="reset"onclick="alert ('Você reiniciou o sistema')">Reiniciar</button>
+        <div class="Recuperar senha"><button type="button" disabled ="True" id="recover-password-button"> Recuperar senha</button></div>
 
-        </div>
-        <div class="Recuperar senha">
-            <button type="button"> Recuperar senha</button>
 
-        </div>
     </form>
     
-    
-    
+    <!--Conectando ao java script-->
+    <script src="js/script.js"></script>
 </body>
 </html>
